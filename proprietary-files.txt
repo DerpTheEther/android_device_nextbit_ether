@@ -72,6 +72,8 @@ vendor/lib64/libaudcal.so
 # Bluetooth
 bin/hci_qcomm_init:vendor/bin/hci_qcomm_init
 bin/wcnss_filter:vendor/bin/wcnss_filter
+vendor/lib64/libaptX_encoder.so
+vendor/lib64/libaptXHD_encoder.so
 vendor/lib64/libbtnv.so
 
 # Camera

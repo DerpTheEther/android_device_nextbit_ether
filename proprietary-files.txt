@@ -76,6 +76,8 @@ vendor/lib64/libaudcal.so
 bin/hci_qcomm_init
 bin/wcnss_filter
 vendor/lib/libbtnv.so
+vendor/lib64/libaptX_encoder.so
+vendor/lib64/libaptXHD_encoder.so
 vendor/lib64/libbtnv.so
 
 # Camera

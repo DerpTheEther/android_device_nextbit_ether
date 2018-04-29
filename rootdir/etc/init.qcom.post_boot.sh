@@ -132,15 +132,6 @@ echo "4:4294967295 5:4294967295" > /sys/module/msm_performance/parameters/cpu_ma
 echo "0:960000 4:960000" > /sys/module/cpu_boost/parameters/input_boost_freq
 echo 200 > /sys/module/cpu_boost/parameters/input_boost_ms
 
-# core_ctl config
-echo 0 > /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
-echo 2 > /sys/devices/system/cpu/cpu4/core_ctl/max_cpus
-echo 60 > /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres
-echo 30 > /sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres
-echo 100 > /sys/devices/system/cpu/cpu4/core_ctl/offline_delay_ms
-echo 1 > /sys/devices/system/cpu/cpu4/core_ctl/is_big_cluster
-echo 2 > /sys/devices/system/cpu/cpu4/core_ctl/task_thres
-
 # Setting b.L scheduler parameters
 echo 1 > /proc/sys/kernel/sched_migration_fixup
 echo 25 > /proc/sys/kernel/sched_small_task

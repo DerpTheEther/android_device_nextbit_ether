@@ -187,10 +187,10 @@ void toggle_sustained_performance(bool request_enable)
     if (request_enable) {
         /*
          * Unplug all big cores
-         * Set maximum GPU power level to 3
          * Set interactive timer rate to 40ms
+         * Set maximum GPU power level to 3
          */
-        int resources[] = {0x41004000, 0x0, 0x41424000, 0x28, 0X42808000, 0x3};
+        int resources[] = {0x41004000, 0x0, 0x41424100, 0x28, 0X42808000, 0x3};
         handle_sustained_performance = interaction_with_handle(
                  handle_sustained_performance, 0,
                  sizeof(resources) / sizeof(resources[0]), resources);

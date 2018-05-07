@@ -14,6 +14,7 @@ LOCAL_SRC_FILES := power.c metadata-parser.c utils.c list.c hint-data.c
 # Include target-specific files.
 ifeq ($(call is-board-platform-in-list, msm8992), true)
 LOCAL_SRC_FILES += power-8992.c
+LOCAL_CFLAGS += -DMPCTLV3
 endif
 
 ifeq ($(TARGET_USES_INTERACTION_BOOST),true)
